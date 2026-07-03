@@ -139,7 +139,10 @@ jobs:
           sonar-token: ${{ env.SONAR_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           pull-request: ${{ github.event.pull_request.number }}
-          fail-on-error: true
+          fail-on-quality-gate-error: true
+          pr-comment-title: "SonarQube Quality Gate Result"
+          disable-pr-comment: true
+          disable-step-summary: false
 
            
 
