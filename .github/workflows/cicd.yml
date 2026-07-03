@@ -138,7 +138,7 @@ jobs:
           sonar-host-url: https://sonarcloud.io
           sonar-token: ${{ env.SONAR_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          branch: PLAT-1991-fix-security-bug
           fail-on-error: true
 
            
