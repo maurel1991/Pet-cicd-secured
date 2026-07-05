@@ -4,7 +4,12 @@
 
 <body>
 
-  <h2 th:text="#{welcome}">Welcome</h2>
+  <h2 th:text="#{welcome}">Welcome to Ola's Petclinic</h2>
+
+  <div class="alert alert-info" role="alert">
+    This deployment is part of my <strong>Utrains</strong> DevSecOps CI/CD training project 🎓
+  </div>
+
   <div class="row">
     <div class="col-md-12">
       <img class="img-responsive" src="../static/resources/images/pets.png" th:src="@{/resources/images/pets.png}" />
