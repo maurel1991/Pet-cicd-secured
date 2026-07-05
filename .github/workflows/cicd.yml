@@ -263,6 +263,11 @@ jobs:
           docker push \
             $ECR_REGISTRY/$ECR_REPOSITORY:latest
 
+      - name: Debug env
+        run: |
+         echo "Repository length: ${#ECR_REPOSITORY}"
+         printf '%s' "$ECR_REPOSITORY" | xxd | head -5
+
 
         
 
